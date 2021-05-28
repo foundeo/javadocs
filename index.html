@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Java Documentation Project - URL Shortcut for Java Docs</title>
+		<style type="text/css">
+			body { font-family: verdana,arial; margin:0px; text-align:center; background-color: #f9f9f9}
+			.t { font-size: 56pt;padding-top:30px; padding-bottom:4px; background-color: #6699ff; }
+			.s { background-color:white; padding:50px;font-weight:bold; border-top: 4px dashed black;}
+			.b { font-size: xx-small; border-top:4px dashed silver; } 
+			.tip { font-size: x-small; font-weight:normal; color:#339933; }
+		</style>
+		<script type="text/javascript">
+			function g() { 
+				document.f.action = '/'+document.f.t.value + '/';
+			}
+		</script>
+	</head>
+	<body onload="document.f.t.focus();">
+		<div class="t">javadocs.org</div>
+		<div class="s">
+		<form name="f" onsubmit="g();" action="">
+		Class or Package Name:
+		<input type="text" name="t" size="35" />
+		<input type="submit" value="go" />
+		</form>
+		<div class="tip">Tip: You can search from the url, eg: javadocs.org/string</div>
+		</div>
+		<div class="b"><a href="https://docs.oracle.com/javase/8/docs/api/">J2SE 8</a> | <a href="https://java.sun.com/j2ee/1.4/docs/api/">J2EE 1.4</a> | Built By: <a href="https://foundeo.com/">Foundeo Inc.</a>
+		</div>
+	</body>
+</html>   
